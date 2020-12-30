@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesMovie", "RazorPagesMovie\RazorPagesMovie.csproj", "{8C331F2C-5C38-459B-B019-C58A57059732}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "MvcMovie\MvcMovie.csproj", "{D523CC1D-9ED7-44FB-A880-6F33AFAF03C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{F66B72F2-236C-40B8-AB23-1F9CAD56BA11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi(MongoDB)", "WebApi(MongoDB)\WebApi(MongoDB).csproj", "{EE714175-90FD-4FB6-9D5F-1F72E611E1B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcGreeter", "GrpcGreeter\GrpcGreeter.csproj", "{26156164-824F-497C-B2DB-85B37BE00D9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeterClient", "GrpcGreeterClient\GrpcGreeterClient.csproj", "{300CB9E5-DB0B-4FC1-ADAB-294F23887B3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C331F2C-5C38-459B-B019-C58A57059732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C331F2C-5C38-459B-B019-C58A57059732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C331F2C-5C38-459B-B019-C58A57059732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C331F2C-5C38-459B-B019-C58A57059732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D523CC1D-9ED7-44FB-A880-6F33AFAF03C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D523CC1D-9ED7-44FB-A880-6F33AFAF03C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D523CC1D-9ED7-44FB-A880-6F33AFAF03C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D523CC1D-9ED7-44FB-A880-6F33AFAF03C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F66B72F2-236C-40B8-AB23-1F9CAD56BA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66B72F2-236C-40B8-AB23-1F9CAD56BA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66B72F2-236C-40B8-AB23-1F9CAD56BA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66B72F2-236C-40B8-AB23-1F9CAD56BA11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE714175-90FD-4FB6-9D5F-1F72E611E1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE714175-90FD-4FB6-9D5F-1F72E611E1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE714175-90FD-4FB6-9D5F-1F72E611E1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE714175-90FD-4FB6-9D5F-1F72E611E1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26156164-824F-497C-B2DB-85B37BE00D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26156164-824F-497C-B2DB-85B37BE00D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26156164-824F-497C-B2DB-85B37BE00D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26156164-824F-497C-B2DB-85B37BE00D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{300CB9E5-DB0B-4FC1-ADAB-294F23887B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{300CB9E5-DB0B-4FC1-ADAB-294F23887B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{300CB9E5-DB0B-4FC1-ADAB-294F23887B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{300CB9E5-DB0B-4FC1-ADAB-294F23887B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C587EA4-4998-43AC-B094-204E648880D7}
+	EndGlobalSection
+EndGlobal
