@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi(MongoDB)", "WebApi(M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcGreeter", "GrpcGreeter\GrpcGreeter.csproj", "{26156164-824F-497C-B2DB-85B37BE00D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeterClient", "GrpcGreeterClient\GrpcGreeterClient.csproj", "{300CB9E5-DB0B-4FC1-ADAB-294F23887B3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcGreeterClient", "GrpcGreeterClient\GrpcGreeterClient.csproj", "{300CB9E5-DB0B-4FC1-ADAB-294F23887B3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "ContosoUniversity\ContosoUniversity.csproj", "{BB0C12E0-92E2-4A48-B279-9E9D357AB94C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{300CB9E5-DB0B-4FC1-ADAB-294F23887B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{300CB9E5-DB0B-4FC1-ADAB-294F23887B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{300CB9E5-DB0B-4FC1-ADAB-294F23887B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0C12E0-92E2-4A48-B279-9E9D357AB94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0C12E0-92E2-4A48-B279-9E9D357AB94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0C12E0-92E2-4A48-B279-9E9D357AB94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0C12E0-92E2-4A48-B279-9E9D357AB94C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
