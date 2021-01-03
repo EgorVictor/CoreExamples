@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using ContosoUniversity.Data;
 using ContosoUniversity.Models;
 
-namespace ContosoUniversity.Pages.Students
+namespace ContosoUniversity.Pages.Instructors
 {
     public class EditModel : PageModel
     {
@@ -21,7 +21,7 @@ namespace ContosoUniversity.Pages.Students
         }
 
         [BindProperty]
-        public Student Student { get; set; }
+        public Instructor Instructor { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,9 +30,9 @@ namespace ContosoUniversity.Pages.Students
                 return NotFound();
             }
 
-            Student = await _context.Students.FirstOrDefaultAsync(m => m.ID == id);
+            Instructor = await _context.Instructors.FirstOrDefaultAsync(m => m.ID == id);
 
-            if (Student == null)
+            if (Instructor == null)
             {
                 return NotFound();
             }
@@ -48,7 +48,7 @@ namespace ContosoUniversity.Pages.Students
                 return Page();
             }
 
-            _context.Attach(Student).State = EntityState.Modified;
+            _context.Attach(Instructor).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace ContosoUniversity.Pages.Students
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!StudentExists(Student.ID))
+                if (!InstructorExists(Instructor.ID))
                 {
                     return NotFound();
                 }
@@ -69,9 +69,9 @@ namespace ContosoUniversity.Pages.Students
             return RedirectToPage("./Index");
         }
 
-        private bool StudentExists(int id)
+        private bool InstructorExists(int id)
         {
-            return _context.Students.Any(e => e.ID == id);
+            return _context.Instructors.Any(e => e.ID == id);
         }
     }
 }

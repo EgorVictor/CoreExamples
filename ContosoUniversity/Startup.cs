@@ -28,7 +28,7 @@ namespace ContosoUniversity
             services.AddRazorPages();
 
             services.AddDbContext<SchoolContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("SchoolContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("SchoolContext")));
             services.AddDatabaseDeveloperPageExceptionFilter();
         }
 

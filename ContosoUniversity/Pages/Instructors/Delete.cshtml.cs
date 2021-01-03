@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ContosoUniversity.Data;
 using ContosoUniversity.Models;
 
-namespace ContosoUniversity.Pages.Students
+namespace ContosoUniversity.Pages.Instructors
 {
     public class DeleteModel : PageModel
     {
@@ -20,7 +20,7 @@ namespace ContosoUniversity.Pages.Students
         }
 
         [BindProperty]
-        public Student Student { get; set; }
+        public Instructor Instructor { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -29,9 +29,9 @@ namespace ContosoUniversity.Pages.Students
                 return NotFound();
             }
 
-            Student = await _context.Students.FirstOrDefaultAsync(m => m.ID == id);
+            Instructor = await _context.Instructors.FirstOrDefaultAsync(m => m.ID == id);
 
-            if (Student == null)
+            if (Instructor == null)
             {
                 return NotFound();
             }
@@ -45,11 +45,11 @@ namespace ContosoUniversity.Pages.Students
                 return NotFound();
             }
 
-            Student = await _context.Students.FindAsync(id);
+            Instructor = await _context.Instructors.FindAsync(id);
 
-            if (Student != null)
+            if (Instructor != null)
             {
-                _context.Students.Remove(Student);
+                _context.Instructors.Remove(Instructor);
                 await _context.SaveChangesAsync();
             }
 
